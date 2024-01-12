@@ -40,9 +40,10 @@ spec:
     command: []
     args: []
     sources:
+      - crd
       - service
       - ingress
-    provider: aws
+    provider: cloudflare
     initContainers: []
     sidecars: []
     namespace: ''
@@ -271,7 +272,7 @@ spec:
     priorityClassName: ''
     secretAnnotations: {}
     crd:
-      create: false
+      create: true
       apiversion: ''
       kind: ''
     service:
