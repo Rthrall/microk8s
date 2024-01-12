@@ -111,7 +111,7 @@ spec:
     cloudflare:
       apiToken: ''
       apiKey: ''
-      secretName: ''
+      secretName: cloudflare-token
       email: ''
       proxied: true
     coredns:
@@ -272,7 +272,7 @@ spec:
     priorityClassName: ''
     secretAnnotations: {}
     crd:
-      create: true
+      create: false
       apiversion: ''
       kind: ''
     service:
